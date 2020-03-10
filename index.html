@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Igcse Mcqs</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="script.js"></script>
+        <style>
+        #select-paper{
+            padding-left: 100px;
+            padding-right: 200px;
+        }
+       #bdy{
+           color: gray;
+       }
+       #options_div{
+           margin-left: 600px;
+          
+       }
+        </style>
+
+<!--Navbar with logo and dropdown for selecting web pages-->
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <!-- Brand -->
+        <h2 class="navbar-brand">IGCSE PHYSICS MCQS</h2>
+      
+        <!-- Links -->
+        <ul class="navbar-nav">
+          <li class="nav-item">
+                <a class="navbar-link" href="#" style="color: white; padding-left: 20px; padding-right: 20px; font-size: 22px;">Previous Scores</a>
+          </li>
+          
+          <!-- Dropdown -->
+          <select id="select-paper" style="padding-bottom: 5px; padding-top: 5px; color: gray;" >
+              <div class="dropdown-menu">
+              <option value="2020 MCQ SPECIMEN"  >2020 MCQ SPECIMEN Paper2</option>
+              <option value="Upcoming"  >Upcoming.......</option>
+                  </div>      
+            </select>
+        </ul>
+      </nav> 
+
+    </head>
+
+    <body id="bdy">
+
+<!--Questions and options in images are visible-->
+<br>
+<img class="img-fluid" id="question-change-image" src="Q1.png" style="margin-left: 550px;" alt="Questions" > 
+  <br>
+  <!--Mcq options as check boxes-->
+  <h3 style="margin-left: 600px;">Select Your Option</h3>
+  <br>
+  <table>
+      <tr>
+          <th>
+  <div id="options_div">
+ <input type="text" placeholder="A,B,C or D" id="MCQ-options">
+  </div>
+  </th>
+  <th>
+      <!--submit mcq answer button-->
+      <button id="submit-mcq-option" class="btn btn-secondary" style="margin-left: 30px;" >Submit Answer</button>
+  </th>
+  </tr>
+</table>
+
+</body>
+</html>
